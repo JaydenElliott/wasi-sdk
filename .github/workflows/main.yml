@@ -30,7 +30,6 @@ jobs:
       # submodule is not pinned to a particular tag/branch. Please
       # bump depth (or even better, the submodule), in case of "error:
       # Server does not allow request for unadvertised object" in the
-      # future.
       - run: git submodule update --init --depth 16 --jobs 3
       - name: Install ccache, ninja (macOS)
         run: brew install ccache ninja
